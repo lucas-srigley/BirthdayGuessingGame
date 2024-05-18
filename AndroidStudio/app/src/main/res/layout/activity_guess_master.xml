@@ -1,0 +1,64 @@
+<!--
+Lucas Srigley
+Student Number: 20289448
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ticket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Tickets: 0   "
+        android:gravity="right"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/entityImage"
+        android:layout_width="280dp"
+        android:layout_height="335dp"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/entityName"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:gravity="center"
+        android:text="Entity Name"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/guessinput"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:gravity="center"
+        android:hint="MM/DD/YYYY"
+        android:inputType="date"
+        android:textSize="20sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnGuess"
+                android:layout_width="206dp"
+                android:layout_height="wrap_content"
+                android:text="Submit Guess" />
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="206dp"
+                android:layout_height="wrap_content"
+                android:text="Change Entity" />
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
